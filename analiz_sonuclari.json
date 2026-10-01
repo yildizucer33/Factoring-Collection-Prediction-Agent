@@ -1,0 +1,25 @@
+{
+    "alacakbildiriformu.pdf": {
+        "customer_id": "UNKNOWN",
+        "invoice_amount": "0.0",
+        "tax_type": "UNKNOWN",
+        "factoring_type": "UNKNOWN",
+        "sector": "Finans"
+    },
+    "ekspofaktoring fatura şablonu.pdf": {
+        "error": "JSON parse hatası",
+        "raw_output": "Aşağıdaki JSON çıktı, metinde bulunan bilgileri analiz ederek oluşturulmuştur:\n\n```json\n{\n  \"customer_id\": \"EKSPO FAKTORİNG A.Ş\",\n  \"invoice_amount\": \"0.0\",\n  \"tax_type\": \"UNKNOWN\",\n  \"factoring_type\": \"Yurtiçi\",\n  \"sector\": \"UNKNOWN\"\n}\n```\n\nAçıklama:\n\n- customer_id: Metinde müşteri adı ve numarası geçmiyor, ancak şirket adı EKSPO FAKTORİNG A.Ş olarak geçiyor. Bu nedenle \"UNKNOWN\" olarak kabul ediyoruz.\n- invoice_amount: Metinde faturanın toplam tutarı veya bedeli geçmiyor. Bu nedenle \"0.0\" olarak kabul ediyoruz.\n- tax_type: Metinde KDV oranı veya vergi türü geçmiyor. Bu nedenle \"UNKNOWN\" olarak kabul ediyoruz.\n- factoring_type: Metinde yurtiçi veya yurtdışı faktoring türü geçiyor. Bu nedenle \"Yurtiçi\" olarak kabul ediyoruz.\n- sector: Metinde faturayı kesen veya alan şirketin faaliyet gösterdiği sektör geçmiyor. Bu nedenle \"UNKNOWN\" olarak kabul ediyoruz."
+    },
+    "garanti şablonu.pdf": {
+        "error": "JSON parse hatası",
+        "raw_output": "Aşağıdaki JSON çıktı, metin analizi sonuçlarını içerir:\n\n```json\n{\n  \"customer_id\": \"MÜŞTERİ\",\n  \"invoice_amount\": \"0.0\",\n  \"tax_type\": \"UNKNOWN\",\n  \"factoring_type\": \"Yurtiçi/Yurtdışı\",\n  \"sector\": \"UNKNOWN\"\n}\n```\n\nAçıklama:\n- `customer_id`: Metinde \"MÜŞTERİ\" ismi geçmektedir, bu nedenle \"customer_id\" için \"MÜŞTERİ\" değerini alıyoruz.\n- `invoice_amount`: Metinde faturanın toplam tutarı veya bedeli ile ilgili bir bilgi bulunmamaktadır, bu nedenle \"invoice_amount\" için \"0.0\" değerini alıyoruz.\n- `tax_type`: Metinde KDV oranı veya vergi türü ile ilgili bir bilgi bulunmamaktadır, bu nedenle \"tax_type\" için \"UNKNOWN\" değerini alıyoruz.\n- `factoring_type`: Metinde \"yurtiçi/yurtdışı\" ifadesi geçmektedir, bu nedenle \"factoring_type\" için \"Yurtiçi/Yurtdışı\" değerini alıyoruz.\n- `sector`: Metinde faturayı kesen veya alan şirketin faaliyet gösterdiği sektör ile ilgili bir bilgi bulunmamaktadır, bu nedenle \"sector\" için \"UNKNOWN\" değerini alıyoruz."
+    },
+    "kapital fatura şablonu.pdf": {
+        "error": "JSON parse hatası",
+        "raw_output": "Analiz edeceğim metin:\nFAKTORİNG SÖZLEŞMESİ\n\nAşağıdaki JSON formatında çıktı vereceğim:\n\n```json\n{\n  \"customer_id\": \"UNKNOWN\",\n  \"invoice_amount\": \"0.0\",\n  \"tax_type\": \"UNKNOWN\",\n  \"factoring_type\": \"Yurtiçi\",\n  \"sector\": \"UNKNOWN\"\n}\n```\n\nAçıklama: Metinde müşteri numarası veya borçlu numarası geçmediği için \"UNKNOWN\" olarak ayarladım. Faturanın toplam tutarı veya bedeli de geçmediği için \"0.0\" olarak ayarladım. Faktoring türü \"Yurtiçi\" olarak ayarladım, çünkü metinde yurtiçi faktoring türü geçmektedir. Sektör ise geçmediği için \"UNKNOWN\" olarak ayarladım."
+    },
+    "tamfinans fatura şablonu.pdf": {
+        "error": "JSON parse hatası",
+        "raw_output": "Analiz edeceğim metin:\n{\n  'customer_id': 'T am Finans Faktoring A.Ş.',\n  'invoice_amount': '0.0',\n  'tax_type': 'UNKNOWN',\n  'factoring_type': 'Yurtiçi/Yurtdışı',\n  'sector': 'Finans'\n}"
+    }
+}
